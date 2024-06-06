@@ -103,7 +103,66 @@
                   </div>
                 </div>
               </header>
-             
+              <script>
+                document.addEventListener("DOMContentLoaded", function () {
+                    const dismissButton = document.getElementById("dismissButton"); // Select the dismiss button
+                    const mobileMenu = document.querySelector('.lg\\:hidden[role="dialog"]'); // Select the mobile menu
+                    const mainMenuButton = document.getElementById("mainmenu"); // Select the main menu button
+                    const menuContent = mobileMenu.querySelector('.menu-content'); // Select the menu content
+        
+                    // Hide the mobile menu initially
+                    mobileMenu.style.display = "none";
+        
+                    dismissButton.addEventListener("click", function () {
+                        mobileMenu.style.display = "none"; // Hide the mobile menu when the dismiss button is clicked
+                    });
+        
+                    mainMenuButton.addEventListener("click", function () {
+                        mobileMenu.style.display = "block"; // Show the mobile menu when the main menu button is clicked
+                    });
+        
+                    function scrollMenu() {
+                        if (mobileMenu.style.display === "block") {
+                            menuContent.scrollBy({
+                                top: menuContent.clientHeight, // Scroll by the height of the visible area
+                                behavior: 'smooth' // Smooth scrolling effect
+                            });
+                        }
+                    }
+        
+                    setInterval(scrollMenu, 1000); // Set the interval to scroll the menu every 5 seconds
+                });
+            </script>
+               
+              <section>
+              <div class="carousel  w-full">
+                <div id="slide1" class="carousel-item relative w-full">
+                  <img src="assets/slide1.jpg" class="w-full" />
+                  
+                </div> 
+                <div id="slide2" class="carousel-item relative w-full">
+                  <img src="assets/slide2.jpg" class="w-full" />
+                  <!-- <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide1" class="btn btn-circle">❮</a> 
+                    <a href="#slide3" class="btn btn-circle">❯</a>
+                  </div> -->
+                </div> 
+                <div id="slide3" class="carousel-item relative w-full">
+                  <img src="https://img.daisyui.com/images/stock/photo-1414694762283-acccc27bca85.jpg" class="w-full" />
+                  <!-- <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide2" class="btn btn-circle">❮</a> 
+                    <a href="#slide4" class="btn btn-circle">❯</a>
+                  </div> -->
+                </div> 
+                <div id="slide4" class="carousel-item relative w-full">
+                  <img src="https://img.daisyui.com/images/stock/photo-1665553365602-b2fb8e5d1707.jpg" class="w-full" />
+                  <!-- <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide3" class="btn btn-circle">❮</a> 
+                    <a href="#slide1" class="btn btn-circle">❯</a>
+                  </div> -->
+                </div>
+              </div>
+            </section>
 
 <style>
   .scrolling-text {
