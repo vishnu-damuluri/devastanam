@@ -124,8 +124,7 @@
                   });
                 });
               </script>
-  
-
+              
               <!-- component -->
 <script defer src="https://unpkg.com/alpinejs@3.2.3/dist/cdn.min.js"></script>
 
@@ -203,7 +202,33 @@
     })
 </script>
 
+<style>
+  .scrolling-text {
+      display: flex;
+      white-space: nowrap;
+      animation: scroll-left 30s linear infinite;
+  }
+  @keyframes scroll-left {
+      0% {
+          transform: translateX(100%);
+      }
+      100% {
+          transform: translateX(-100%);
+      }
+  }
+</style>
 
+<div class="bg-gray-100 flex">
+<div class="w-full overflow-hidden whitespace-nowrap bg-white py-4 shadow-lg rounded-lg">
+  <div class="scrolling-text text-gray-700 text-lg font-bold">
+      <span class="mx-4">Update 1: Lorem ipsum dolor sit amet.</span>
+      <span class="mx-4">Update 2: Consectetur adipiscing elit.</span>
+      <span class="mx-4">Update 3: Sed do eiusmod tempor incididunt.</span>
+      <span class="mx-4">Update 4: Ut labore et dolore magna aliqua.</span>
+      <span class="mx-4">Update 5: Ut enim ad minim veniam.</span>
+  </div>
+</div>
+</div>
 <!--
   Heads up! 👋
 
