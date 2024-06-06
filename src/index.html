@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="./output.css" rel="stylesheet">
+  <link href="./style.css" rel="stylesheet">
 </head>
 <body class="bg-white">
         <header class="bg-white  top-0 w-full z-50">
@@ -164,41 +165,23 @@
               </div>
             </section>
 
-<style>
-  .scrolling-text {
-      display: flex;
-      white-space: nowrap;
-      animation: scroll-left 30s linear infinite;
-  }
-
-  @keyframes scroll-left {
-      0% {
-          transform: translateX(100%);
-      }
-      100% {
-          transform: translateX(-100%);
-      }
-  }
-
-  /* Adjust speed for mobile devices */
-  @media (max-width: 600px) {
-      .scrolling-text {
-          animation-duration: 10s; /* Faster speed for mobile */
-      }
-  }
-</style>
 
 
-<div class="bg-gray-100 flex mt-6">
-<div class="w-full overflow-hidden whitespace-nowrap bg-red-800 py-4 ">
-  <div class="scrolling-text text-white text-lg font-bold">
-      <span class="mx-4">Update 1: Lorem ipsum dolor sit amet.</span>
-      <span class="mx-4">Update 2: Consectetur adipiscing elit.</span>
-      <span class="mx-4">Update 3: Sed do eiusmod tempor incididunt.</span>
-      <span class="mx-4">Update 4: Ut labore et dolore magna aliqua.</span>
-      <span class="mx-4">Update 5: Ut enim ad minim veniam.</span>
+
+<div class="scrolling-text-container my-2">
+  <div class="scrolling-text-inner" style="--marquee-speed: 20s; --direction:scroll-left" role="marquee">
+      <div class="scrolling-text text-white">
+          <div class="scrolling-text-item">Your First Announcement</div>
+          <div class="scrolling-text-item">Your Second Announcement</div>
+          <div class="scrolling-text-item">Your First Announcement</div>
+          <div class="scrolling-text-item">Your Second Announcement</div>
+          <div class="scrolling-text-item">Your First Announcement</div>
+          <div class="scrolling-text-item">Your Second Announcement</div>
+          <div class="scrolling-text-item">Your First Announcement</div>
+          <div class="scrolling-text-item">Your Second Announcement</div>
+          <!-- Add More Items Here -->
+      </div>
   </div>
-</div>
 </div>
 <!--
   Heads up! 👋
