@@ -6,104 +6,89 @@
   <link href="./output.css" rel="stylesheet">
   <link href="./style.css" rel="stylesheet">
 </head>
-<body class="bg-white">
-        <header class="bg-white fixed top-0 w-full z-10">
-                <nav class="mx-auto flex max-w-pc items-center justify-between p-4 lg:px-8" aria-label="Global">
-                  <div class="flex lg:flex">
-                    <div class="flex">
-                      <img class="lg:h-16 md:h-12 h-14 object-contain sm:max-h-14 rounded-full" src="assets/logo.jpg" alt="" />
-                    </div>
-                    
-          
-                    <a class="flex items-center ml-4 text-l font-bold leading-6 text-black">Sri Pallikondeswara swamy devastanam</a>
-                  </div>
-                  <div class="flex lg:hidden">
-                    <button type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700" id="mainmenu">
-                      <span class="sr-only">Open main menu</span>
-                      <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"/>
-                      </svg>
-                    </button>
-                  </div>
-          
-                  <div class="hidden lg:flex lg:flex-1 lg:justify-end gap-8">
-                    <a href="#" class="text-sm font-semibold leading-6 text-grey">Darshan 🙏</a>
-                    <a href="#" class="flex items-center text-sm font-semibold leading-6 text-grey">Seva
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="mx-1 size-6">
-                                <path d="M12.75 12.75a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM7.5 15.75a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5ZM8.25 17.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM9.75 15.75a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5ZM10.5 17.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM12 15.75a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5ZM12.75 17.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM14.25 15.75a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5ZM15 17.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM16.5 15.75a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5ZM15 12.75a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM16.5 13.5a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Z" />
-                                <path fill-rule="evenodd" d="M6.75 2.25A.75.75 0 0 1 7.5 3v1.5h9V3A.75.75 0 0 1 18 3v1.5h.75a3 3 0 0 1 3 3v11.25a3 3 0 0 1-3 3H5.25a3 3 0 0 1-3-3V7.5a3 3 0 0 1 3-3H6V3a.75.75 0 0 1 .75-.75Zm13.5 9a1.5 1.5 0 0 0-1.5-1.5H5.25a1.5 1.5 0 0 0-1.5 1.5v7.5a1.5 1.5 0 0 0 1.5 1.5h13.5a1.5 1.5 0 0 0 1.5-1.5v-7.5Z" clip-rule="evenodd" />
-                              </svg>
-                              
-                    </a>
-                    <a href="#" class="flex items-center text-sm font-semibold leading-6 text-grey">
-                        Contact
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="mx-1 size-6">
-                                <path fill-rule="evenodd" d="M4.848 2.771A49.144 49.144 0 0 1 12 2.25c2.43 0 4.817.178 7.152.52 1.978.292 3.348 2.024 3.348 3.97v6.02c0 1.946-1.37 3.678-3.348 3.97a48.901 48.901 0 0 1-3.476.383.39.39 0 0 0-.297.17l-2.755 4.133a.75.75 0 0 1-1.248 0l-2.755-4.133a.39.39 0 0 0-.297-.17 48.9 48.9 0 0 1-3.476-.384c-1.978-.29-3.348-2.024-3.348-3.97V6.741c0-1.946 1.37-3.68 3.348-3.97Z" clip-rule="evenodd" />
-                              </svg>
-                              
-                    </a>
-                   
-          
-                    <a href="/login" class="flex items-center text-sm font-semibold leading-6 text-grey">Donate 
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="red" class="mx-1 size-6">
-                                <path d="m11.645 20.91-.007-.003-.022-.012a15.247 15.247 0 0 1-.383-.218 25.18 25.18 0 0 1-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0 1 12 5.052 5.5 5.5 0 0 1 16.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 0 1-4.244 3.17 15.247 15.247 0 0 1-.383.219l-.022.012-.007.004-.003.001a.752.752 0 0 1-.704 0l-.003-.001Z" />
-                              </svg>
-                              </a>
-                               
-                    <a href="#" class="flex items-center text-sm font-semibold leading-6 text-grey">Log in
-                      <span aria-hidden="true">&rarr;</span>
-                            
-                    </a>
-                  </div>
-                </nav>
-                <!-- Mobile menu, show/hide based on menu open state. -->
-                <div class="lg:hidden" role="dialog" aria-modal="true">
-                  <!-- Background backdrop, show/hide based on slide-over state. -->
-                  <div class="fixed inset-0 z-10"></div>
-                  <div class="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
-                    <div class="flex items-center justify-between">
-                      <a href="#" class="-m-1.5 p-1.5">
-                        <span class="sr-only"></span>
-                        <img class="h-10 w-auto" src="assets/logo.jpg" alt="" />
-                      </a>
-                      <button type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700" id="dismissButton">
-                        <span class="sr-only">Close menu</span>
-                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-                          <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/>
-                        </svg>
-                      </button>
-                    </div>
-                    <div class="mt-6 flow-root">
-                      <div class="-my-6 divide-y divide-gray-500/10">
-                        <div class="space-y-2 py-6">
-                          <div class="-mx-3"></div>
-                          <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50 flex items-center">Donate
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="red" class="mx-1 size-6">
-                              <path d="m11.645 20.91-.007-.003-.022-.012a15.247 15.247 0 0 1-.383-.218 25.18 25.18 0 0 1-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0 1 12 5.052 5.5 5.5 0 0 1 16.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 0 1-4.244 3.17 15.247 15.247 0 0 1-.383.219l-.022.012-.007.004-.003.001a.752.752 0 0 1-.704 0l-.003-.001Z" />
-                            </svg>
-                          </a>
-                          <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50 flex items-center">Contact 
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="mx-1 size-6">
-                              <path fill-rule="evenodd" d="M4.848 2.771A49.144 49.144 0 0 1 12 2.25c2.43 0 4.817.178 7.152.52 1.978.292 3.348 2.024 3.348 3.97v6.02c0 1.946-1.37 3.678-3.348 3.97a48.901 48.901 0 0 1-3.476.383.39.39 0 0 0-.297.17l-2.755 4.133a.75.75 0 0 1-1.248 0l-2.755-4.133a.39.39 0 0 0-.297-.17 48.9 48.9 0 0 1-3.476-.384c-1.978-.29-3.348-2.024-3.348-3.97V6.741c0-1.946 1.37-3.68 3.348-3.97Z" clip-rule="evenodd" />
-                            </svg>
-                          </a>
-                          <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50 flex items-center">Booking
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="mx-1 size-6">
-                              <path d="M12.75 12.75a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM7.5 15.75a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5ZM8.25 17.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM9.75 15.75a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5ZM10.5 17.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM12 15.75a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5ZM12.75 17.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM14.25 15.75a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5ZM15 17.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM16.5 15.75a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5ZM15 12.75a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM16.5 13.5a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Z" />
-                              <path fill-rule="evenodd" d="M6.75 2.25A.75.75 0 0 1 7.5 3v1.5h9V3A.75.75 0 0 1 18 3v1.5h.75a3 3 0 0 1 3 3v11.25a3 3 0 0 1-3 3H5.25a3 3 0 0 1-3-3V7.5a3 3 0 0 1 3-3H6V3a.75.75 0 0 1 .75-.75Zm13.5 9a1.5 1.5 0 0 0-1.5-1.5H5.25a1.5 1.5 0 0 0-1.5 1.5v7.5a1.5 1.5 0 0 0 1.5 1.5h13.5a1.5 1.5 0 0 0 1.5-1.5v-7.5Z" clip-rule="evenodd" />
-                            </svg>
-                          </a>
-                          <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50 flex items-center">Darshan 🙏</a>
-
-                        </div>
-                        <div class="py-6">
-                          <a href="/login" class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 :bg-gray-50 flex items-center">Log in<span aria-hidden="true">&rarr;</span></a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </header>
+<body class=" bg-white">
+  <header class="bg-white fixed top-0 w-full z-10">
+    <nav class="mx-auto flex max-w-pc items-center justify-between p-4 lg:px-8" aria-label="Global">
+      <div class="flex lg:flex">
+        <div class="flex">
+          <img class="lg:h-16 md:h-12 h-14 object-contain sm:max-h-14 rounded-full" src="assets/logo.jpg" alt="" />
+        </div>
+        <a class="flex items-center ml-4 text-l font-bold leading-6 text-black">Sri Pallikondeswara swamy devastanam</a>
+      </div>
+      <div class="flex lg:hidden">
+        <button type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700" id="mainmenu">
+          <span class="sr-only">Open main menu</span>
+          <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+          </svg>
+        </button>
+      </div>
+      <div class="hidden lg:flex lg:flex-1 lg:justify-end gap-8">
+        <a href="#" class="text-sm font-semibold leading-6 text-grey">Darshan 🙏</a>
+        <a href="#" class="flex items-center text-sm font-semibold leading-6 text-grey">Seva
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="mx-1 size-6">
+            <path d="M12.75 12.75a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM7.5 15.75a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5ZM8.25 17.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM9.75 15.75a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5ZM10.5 17.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM12 15.75a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5ZM12.75 17.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM14.25 15.75a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5ZM15 17.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM16.5 15.75a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5ZM15 12.75a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM16.5 13.5a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Z" />
+            <path fill-rule="evenodd" d="M6.75 2.25A.75.75 0 0 1 7.5 3v1.5h9V3A.75.75 0 0 1 18 3v1.5h.75a3 3 0 0 1 3 3v11.25a3 3 0 0 1-3 3H5.25a3 3 0 0 1-3-3V7.5a3 3 0 0 1 3-3H6V3a.75.75 0 0 1 .75-.75Zm13.5 9a1.5 1.5 0 0 0-1.5-1.5H5.25a1.5 1.5 0 0 0-1.5 1.5v7.5a1.5 1.5 0 0 0 1.5 1.5h13.5a1.5 1.5 0 0 0 1.5-1.5v-7.5Z" clip-rule="evenodd" />
+          </svg>
+        </a>
+        <a href="#" class="flex items-center text-sm font-semibold leading-6 text-grey">Contact
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="mx-1 size-6">
+            <path fill-rule="evenodd" d="M4.848 2.771A49.144 49.144 0 0 1 12 2.25c2.43 0 4.817.178 7.152.52 1.978.292 3.348 2.024 3.348 3.97v6.02c0 1.946-1.37 3.678-3.348 3.97a48.901 48.901 0 0 1-3.476.383.39.39 0 0 0-.297.17l-2.755 4.133a.75.75 0 0 1-1.248 0l-2.755-4.133a.39.39 0 0 0-.297-.17 48.9 48.9 0 0 1-3.476-.384c-1.978-.29-3.348-2.024-3.348-3.97V6.741c0-1.946 1.37-3.68 3.348-3.97Z" clip-rule="evenodd" />
+          </svg>
+        </a>
+        <a href="/login" class="flex items-center text-sm font-semibold leading-6 text-grey">Donate
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="red" class="mx-1 size-6">
+            <path d="m11.645 20.91-.007-.003-.022-.012a15.247 15.247 0 0 1-.383-.218 25.18 25.18 0 0 1-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0 1 12 5.052 5.5 5.5 0 0 1 16.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 0 1-4.244 3.17 15.247 15.247 0 0 1-.383.219l-.022.012-.007.004-.003.001a.752.752 0 0 1-.704 0l-.003-.001Z" />
+          </svg>
+        </a>
+        <a href="#" class="flex items-center text-sm font-semibold leading-6 text-grey">Log in
+          <span aria-hidden="true">&rarr;</span>
+        </a>
+      </div>
+    </nav>
+    <!-- Mobile menu, show/hide based on menu open state. -->
+    <div class="lg:hidden hidden" id="mobile-menu" role="dialog" aria-modal="true">
+      <!-- Background backdrop, show/hide based on slide-over state. -->
+      <div class="fixed inset-0 z-10"></div>
+      <div class="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white p-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+        <div class="flex items-center justify-between">
+          <a href="#" class="-m-1.5 p-1.5">
+            <img class="h-16 w-auto rounded-full" src="assets/logo.jpg" alt="" />
+          </a>
+          <button type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700" id="closemenu">
+            <span class="sr-only">Close menu</span>
+            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+        <div class="mt-6 flow-root">
+          <div class="-my-6 divide-y divide-gray-500/10">
+            <div class="space-y-2 py-6">
+              <a href="#" class="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-400/10">Darshan 🙏</a>
+              <a href="#" class="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-400/10">Seva</a>
+              <a href="#" class="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-400/10">Contact</a>
+              <a href="/login" class="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-400/10">Donate</a>
+            </div>
+            <div class="py-6">
+              <a href="#" class="-mx-3 block rounded-lg py-2.5 px-3 text-base font-semibold leading-6 text-gray-900 hover:bg-gray-400/10">Log in</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  
+  <script>
+    // JavaScript to toggle the mobile menu
+    document.getElementById("mainmenu").addEventListener("click", function() {
+      document.getElementById("mobile-menu").classList.toggle("hidden");
+    });
+    document.getElementById("closemenu").addEventListener("click", function() {
+      document.getElementById("mobile-menu").classList.add("hidden");
+    });
+  </script>
+  
               <script>
                 document.addEventListener('DOMContentLoaded', (event) => {
                   const slides = document.querySelectorAll('.carousel-item');
@@ -187,33 +172,88 @@
 
   This component comes with some `rtl` classes. Please remove them if they are not needed in your project.
 -->
-
-<section>
-  <div class="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16">
-    <div class="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-16">
-      
-
-      <div class="lg:py-24">
-        <h2 class="text-3xl font-bold text-black sm:text-4xl">About Us</h2>
-
-        <p class="mt-4 text-gray-600">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut qui hic atque tenetur quis
-          eius quos ea neque sunt, accusantium soluta minus veniam tempora deserunt? Molestiae eius
-          quidem quam repellat.
-        </p>
-      </div>
-      <div class="relative h-64 overflow-hidden rounded-lg sm:h-80 lg:order-last lg:h-full">
-        <img
-          alt=""
-          src="assets/img4.jpg"
-          class="absolute inset-0 h-full w-full object-cover"
-        />
+<div class="relative isolate overflow-hidden bg-white px-6 py-24 sm:py-32 lg:overflow-visible lg:px-0">
+  <div class="absolute inset-0 -z-10 overflow-hidden">
+    <svg class="absolute left-[max(50%,25rem)] top-0 h-[64rem] w-[128rem] -translate-x-1/2 stroke-gray-200 [mask-image:radial-gradient(64rem_64rem_at_top,white,transparent)]" aria-hidden="true">
+      <defs>
+        <pattern id="e813992c-7d03-4cc4-a2bd-151760b470a0" width="200" height="200" x="50%" y="-1" patternUnits="userSpaceOnUse">
+          <path d="M100 200V.5M.5 .5H200" fill="none" />
+        </pattern>
+      </defs>
+      <svg x="50%" y="-1" class="overflow-visible fill-gray-50">
+        <path d="M-100.5 0h201v201h-201Z M699.5 0h201v201h-201Z M499.5 400h201v201h-201Z M-300.5 600h201v201h-201Z" stroke-width="0" />
+      </svg>
+      <rect width="100%" height="100%" stroke-width="0" fill="url(#e813992c-7d03-4cc4-a2bd-151760b470a0)" />
+    </svg>
+  </div>
+  <div class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:items-start lg:gap-y-10">
+    <div class="lg:col-span-2 lg:col-start-1 lg:row-start-1 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
+      <div class="lg:pr-4">
+        <div class="lg:max-w-lg">
+          <p class="text-base font-semibold leading-7 text-indigo-600">Temple</p>
+          <h1 class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Story</h1>
+        </div>
       </div>
     </div>
+    <div class="-ml-12 -mt-12 p-12 lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden">
+      <img class="w-[48rem] max-w-none rounded-xl bg-gray-900 shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem]" src="assets/img4.jpg" alt="">
+    </div>
+    <div class="lg:col-span-2 lg:col-start-1 lg:row-start-2 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
+      <a class="my-4 font-semibold text-black">"Jagadhap pitharou vandhe Parvathi Parameshwarou!!!"<br> Salutations to the parents of the Universe, O Parvathi and Parameshwara!!!</a>
+      <br>
+      <a class="my-4">
+        Surutapalli is a village in the Chittoor District in Andhra Pradesh, India. In this village is a temple dedicated to Lord Shiva, a very special temple indeed for many are the unique features in this temple. Surutapalli is a place that’s 56 kms from Chennai, TamilNadu. The route is Chennai -> Redhills -> Periyapalayam -> Uthookottai -> Surutapalli. From Tirupathi, its 75 kms. The route is Tirupathi -> Puoor -> Nahalapuram -> Surutapalli. It was really an amazing trip to this temple, as unexpected as astounding.
+      </a>
+      <br>
+      <div id="moreContent" style="display: none;">
+        <a class="my-4">The temple has an outer prakaram, an inner prakaram. In the inner prakaram lies the Garbagraham (the Sanctum Sanctorum), that has the shrines of Shiva and Parvathi. Sitting at the entrance of the shrine of Lord Shiva, is the God who gets the first respects, the destroyer of all obstacles, Lord Ganapathi. Surutapalli is the place where Sage Valmiki, the composer of the Ramayana, a great epic in Hindu Mythology, performed severe penance towards Lord Shiva. Moved by his devotion, the Lord appeared in front of him. Sage Valmiki is a ‘Svayambhu’ linga, a self-formed one, worshipped as Lord Valmikeswarar. This is the Pradhosha Murthy, the one who takes the offerings on the day of the Pradhosham. Opposite Valmikeswarar, is Lord Shiva as another Linga. The Goddess is worshipped as Maragadhambika.</a>
+        <br>
+        <a class="my-4">
+          The temple has an outer prakaram, an inner prakaram. In the inner prakaram lies the Garbagraham (the Sanctum Sanctorum), that has the shrines of Shiva and Parvathi. Sitting at the entrance of the shrine of Lord Shiva, is the God who gets the first respects, the destroyer of all obstacles, Lord Ganapathi. Surutapalli is the place where Sage Valmiki, the composer of the Ramayana, a great epic in Hindu Mythology, performed severe penance towards Lord Shiva. Moved by his devotion, the Lord appeared in front of him. Sage Valmiki is a ‘Svayambhu’ linga, a self-formed one, worshipped as Lord Valmikeswarar. This is the Pradhosha Murthy, the one who takes the offerings on the day of the Pradhosham. Opposite Valmikeswarar, is Lord Shiva as another Linga. The Goddess is worshipped as Maragadhambika.
+        </a>
+        <br>
+        <a class="my-4">
+          Then as one comes around Valmikeswarar, to the left of Him, are also present Lord Krishna and Lord Hanuman. There is a stone slab, that has the impressions of small pairs of feet, proclaimed to be the feet of Lava and Kusha, the two sons o f Lord Rama. It is believed that Lava and Kusha played here. In the entrance to the chamber of Lord Shiva are also present Lord Rama with Sita, Lakshman and Hanuman along with Bharata and Shatrugna.
+        </a>
+        <br>
+        <a class="my-4">
+          Along the western wall of the inner prakaram, facing the Lingodhbhavar is another speciality. Called “Ekapaadha Trimurthy”, is a carving, depicting the trinity standing on one foot. In the centre is Lord Shiva, Lord Vishnu to His left and Lord Brahma to His right. One foot of Vishnu rests on the Garuda and one foot of Brahma rests on the Swan. The other foot of both joins with the foot that all three are depicted standing on. The shrine of Lord Subrahmanya with Valli and Devasena faces south, yet another speciality. There is also a deity of Sage Valmiki, depicted sitting and having a turban on his head.
+        </a>
+        <br>
+        <a class="my-4">
+          In the outer prakaram, is the Sthala Vriksham, a peepal tree that is so huge and tall and widespread, hosting the shrine of the Nagaraja. In the southern corridor of the outer prakaram, lies the ultimate uniqueness of Surutapalli.
+        </a>
+        <br>
+        <a class="my-4">
+          In one of the rarest and the most unique sights across any Indian Temple, is Lord Shiva depicted as resting on the lap of Goddess Parvathi. He is worshipped as Pallikondeswarar. (Palli - Tamil – Sleep, Konda – Tamil – to have or to be, Eswarar – Tamil - Shiva). 
+        </a>
+        <br>
+        <a class="my-4">
+          Lord Shiva is always worshipped in the form of a Linga. But here at Surutapalli, the Lord is in bodily form. For the goodness and safety of all the worlds, Lord Shiva drank the Aalahala poison, emanated during the Churning of the Milk Ocean. And the Goddess, fearing the danger, stopped the poison at Lord Shiva’s throat and stopped it from entering the body, giving Shiva the much celebrated name, Neelakhanta, the one with the blue throat. Feeling giddy from the consumption of Aalahala, the Lord is seen resting on the lap of His wife Parvathi. All the sages, devas and angels are singing around Him requesting Him to get up and restore balance in the world. Heeding to their prayers, the Lord wakes up and performs the “Anandha Natanam”, the dance of immense happiness or bliss. It was the Sandhya Kaalam or the evening, of Thrayodhasi (the thirteenth day after a new moon or a full moon), when this happened. This is the reason why the evenings of Thrayodhasis are celebrated as Pradhoshams. Hence Surutapalli is held as the “Aadhara Kshetram” for pradhoshams.
+        </a>
+      </div>
+      <br>
+      <button id="showMoreBtn" class="mt-4 text-indigo-600 hover:text-indigo-900 font-semibold" href="#showMoreBtn">Show More</button>
+    </div>
   </div>
-</section>
-      
-      
+</div>
+
+<script>
+  document.getElementById("showMoreBtn").addEventListener("click", function() {
+    var moreContent = document.getElementById("moreContent");
+    if (moreContent.style.display === "none") {
+      moreContent.style.display = "block";
+      this.textContent = "Show Less";
+    } else {
+      moreContent.style.display = "none";
+      this.textContent = "Show More";
+    }
+  });
+</script>
+
+
+
+
       <!-- component -->
       <section class="justify-center">
         <div class="mx-auto max-w-screen-2xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 " >
@@ -223,7 +263,7 @@
             
           </header>
       
-          <ul class="mt-8 grid grid-cols-1 gap-4 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-2">
+          <ul class="mt-8 grid grid-cols-1 gap-4 lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-2">
             <li>
               <a href="#" class="group relative block">
                 <img
@@ -234,7 +274,7 @@
       
                 <div class="absolute inset-0 flex flex-col items-start justify-end p-6">
                  
-                    <h3 class="text-2xl font-semibold text-black mx-2 my-2 text-center gap-4 bg-white py-3 px-4">Seva <span aria-hidden="true">&rarr;</span></h3>
+                    <h3 class="text-xl font-semibold text-black mx-2 my-2 text-start gap-4 bg-white py-3 px-4">Abhishekam <span aria-hidden="true">&rarr;</span></h3>
       
                   
                  
@@ -251,7 +291,21 @@
                 />
       
                 <div class="absolute inset-0 flex flex-col items-start justify-end p-6">
-                  <h3 class="text-2xl font-semibold text-black bg-white py-3 px-4">Online Darshan <span aria-hidden="true">&rarr;</span></h3>
+                  <h3 class="text-xl font-semibold text-black bg-white py-3 px-4">Seva <span aria-hidden="true">&rarr;</span></h3>
+      
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="group relative block">
+                <img
+                  src="assets/IMG-20240510-WA0023.jpg"
+                  alt=""
+                  class="aspect-square sm:w-72 w-full md:w-96 object-cover transition duration-500 group-hover:opacity-60"
+                />
+      
+                <div class="absolute inset-0 flex flex-col items-start justify-end p-6">
+                  <h3 class="text-xl font-semibold text-black bg-white py-3 px-4">Prasadam <span aria-hidden="true">&rarr;</span></h3>
       
                 </div>
               </a>
@@ -265,7 +319,7 @@
                 />
       
                 <div class="absolute inset-0 flex flex-col items-start justify-end p-6">
-                  <h3 class="text-2xl font-semibold text-black bg-white py-3 px-4">Store <span aria-hidden="true">&rarr;</span></h3>
+                  <h3 class="text-xl font-semibold text-black bg-white py-3 px-4">Book Online Darshan <span aria-hidden="true">&rarr;</span></h3>
       
                 </div>
               </a>
@@ -275,7 +329,6 @@
           </ul>
         </div>
       </section>
-
       <section >
         <a class="mt-8 ml-8 text-2xl font-bold text-black font-xl">Hear from our devotees</a>
         <div class="grid grid-cols-1 my-6 ml-4 mr-4 gap-4 lg:grid-cols-4 md:grid-cols-2 lg:gap-8">
@@ -360,6 +413,7 @@
       <div class="w-full text-right p-4">
         <a class="text-right text-xl font-semibold " href="#">Share your experience <span aria-hidden="true">&rarr;</span></a>
     </div>
+      
 
         <!-- component -->
 <footer class="bg-white" aria-labelledby="footer-heading">
